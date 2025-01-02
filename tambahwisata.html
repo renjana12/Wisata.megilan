@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://localhost/wisata/admin/add_wisata.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Wisata</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        form {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: #f1f1f1;
+        }
+
+        input[type="text"],
+        textarea,
+        select,
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            background-color: #00b894;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #55efc4;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #fab1a0;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .error-message {
+            color: #ff7675;
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tambah Wisata</h1>
+    
+    
+    <form method="POST" enctype="multipart/form-data">
+        <label for="title">Judul:</label>
+        <input type="text" name="title" id="title" required="">
+
+        <label for="description">Deskripsi:</label>
+        <textarea name="description" id="description" rows="4" required=""></textarea>
+
+        <label for="image">Gambar:</label>
+        <input type="file" name="image" id="image" required="">
+
+        <label for="kategori">Kategori:</label>
+        <select name="kategori" id="kategori" required="">
+            <option value="">Pilih Kategori</option>
+                            <option value="1">Pantai</option>
+                            <option value="2">Gunung</option>
+                            <option value="3">Budaya</option>
+                            <option value="4">Sejarah</option>
+                    </select>
+
+        <input type="submit" value="Tambah Wisata">
+    </form>
+
+    <p><a href="http://localhost/wisata/admin/dashboard.php">Kembali ke Dashboard</a></p>
+
+
+</body></html>

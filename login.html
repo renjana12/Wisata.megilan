@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://localhost/wisata/login.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1abc9c, #2c3e50);
+            color: #fff;
+        }
+
+        .login-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-container label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .login-container input[type="submit"] {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #2ecc71;
+        }
+
+        .login-container p {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .login-container a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        
+        <!-- Tampilkan pesan error jika ada -->
+        
+        <!-- Form Login -->
+        <form method="POST" action="http://localhost/wisata/login.php">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required="">
+            
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required="">
+            
+            <input type="submit" value="Login">
+        </form>
+
+        <p>Belum punya akun? <a href="http://localhost/wisata/register.php">Register</a></p>
+    </div>
+
+
+</body></html>
